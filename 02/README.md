@@ -1,4 +1,5 @@
 ```
+for FILE in $(ls | grep .tst)
 do
         echo $FILE:
         hds $FILE
