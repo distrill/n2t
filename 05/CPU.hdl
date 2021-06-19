@@ -46,8 +46,9 @@ CHIP CPU {
     Mux16 (a=instruction, b=aluB, sel=instruction[15], out=InstructionOrALU);
     ARegister (in=InstructionOrALU, load=writeA, out=a1, out=a2, out=a3);
 
+    And (a=instruction[4], b=op, out=writeD);
     Mux16 (a=a1, b=inM, sel=instruction[12], out=aOrM);
-    DRegister (in=aluC, load=instruction[4], out=d);
+    DRegister (in=aluC, load=writeD, out=d);
 
     ALU (
     	x=d,
@@ -110,6 +111,7 @@ CHIP CPU {
     );
 
     And (a=jump1, b=op, out=jump);
+    Not (in=jump, out=inc);
 
     PC (
        in=a3,
