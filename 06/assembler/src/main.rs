@@ -3,9 +3,9 @@ use std::env;
 use anyhow::{anyhow, Result};
 
 mod parser;
-mod assember;
+mod assembler;
 
-use assember::Assembler;
+use assembler::Assembler;
 
 #[derive(Debug)]
 struct Config {

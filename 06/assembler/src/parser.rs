@@ -6,7 +6,7 @@ use stringsort::insertsort;
 /// straight from string to bin string, but this way we retain semantics for 
 /// each parsed token
 ///
-/// among other things, this allows us to print the tokens with human readablj
+/// among other things, this allows us to print the tokens with human readable
 /// names and descriptions
 trait Token<T> {
     fn new (raw: Option<String>) -> Result<T>;
