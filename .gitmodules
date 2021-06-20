@@ -1,0 +1,3 @@
+[submodule "06/assember-n2t"]
+	path = 06/assember-n2t
+	url = git@github.com:distrill/assember-n2t.git
