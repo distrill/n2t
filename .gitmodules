@@ -1,3 +1,6 @@
 [submodule "06/n2t-assembler"]
 	path = 06/n2t-assembler
 	url = git@github.com:distrill/n2t-assembler.git
+[submodule "07/n2t-vm-translator"]
+	path = 07/n2t-vm-translator
+	url = git@github.com:distrill/n2t-vm-translator.git
